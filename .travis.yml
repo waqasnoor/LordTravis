@@ -16,10 +16,10 @@ before_script:
 
 script:
   - docker --version #print docker version
-  - docker build -t LordTravis .
-  - docker tag LordTravis waqasnoor/LordTravis:latest
+  - docker build -t lord-travis .
+  - docker tag lord-travis waqasnoor/lord-travis:latest
 
 # Tasks to perform after image
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push waqasnoor/LordTravis
+  - docker push waqasnoor/lord-travis
