@@ -5,6 +5,10 @@ node_js:
 services:
   - docker
 
+branches:
+  only:
+    - main
+
   #Pre-testing installs
 install:
   - echo "nothing needs to be installed"
