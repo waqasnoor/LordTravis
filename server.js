@@ -4,7 +4,7 @@ function sleep(ms) {
 
 async function main() {
   while (true) {
-    console.log("Containers rule! commit 1");
+    console.log("Containers rule! commit 2");
     await sleep(5000);
   }
 }
